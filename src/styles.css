@@ -13,6 +13,10 @@ div {
   margin: 20px;
 }
 
+div ul {
+  margin-bottom: 20px;
+}
+
 div li {
   display: flex;
   align-items: center;
