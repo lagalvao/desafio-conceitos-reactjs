@@ -32,17 +32,17 @@ export default function App() {
 
   return (
     <div>
-      {repositories.map(repository => (
-        <ul data-testid="repository-list" key={repository.id}>
-          <li>
+      <ul data-testid="repository-list">
+        {repositories.map(repository => (
+          <li key={repository.id}>
             {repository.title}
 
             <button onClick={() => handleRemoveRepository(repository.id)}>
               Remover
           </button>
           </li>
-        </ul>
-      ))}
+        ))}
+      </ul>
 
       <button onClick={handleAddRepository}>Adicionar</button>
     </div>
